@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+  background-color: #5a2d82;
+  color: #fff;
+  padding: 16px 0;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 8px;
+  list-style: none;
+}
+
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  padding-top: 50px;
+}
+
+
+.flex-sobre {
+  display: flex;
+}
+
+.flex-sobre img {
+  width: 500px;
+  margin-right: 12px;
+}
+
+
+.content-sobre p,
+.content-sobre h2 {
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 10px 0;
+  border: 1px solid #5a2d82 ;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 23.5%);
+  column-gap: 2%;
+  row-gap: 20px;
+  
+}
+
+.grid-produtos li {
+  list-style: none;
+}
+
+.grid-produtos li a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid-produtos li a p {
+  margin: 8px 0;
+}
+
+.grid-produtos li a img {
+  width: 100%;;
+
+}
+
+.grid-produtos li a button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgba(7,194,120,0.8);
+  color: #fff;
+  font-size: 16px;
+}
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header ul li a {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .flex-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+  }
+
+  .flex-sobre img {
+    width: 100%;
+    
+  }
+
+  .grid-produtos {
+    display: block;
+    
+  }
+
+  .grid-produtos li {
+    list-style: none;
+    margin-bottom: 16px;
+  }
+
+
+  
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 2%;
+    row-gap: 20px;
+    
+    
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .flex-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flex-sobre img {
+    width: 100%;
+    
+  }
+}
